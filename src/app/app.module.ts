@@ -28,8 +28,7 @@ import { UserComponent } from './pages/user/user.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
-    
+    ReactiveFormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

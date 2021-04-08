@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormControl,FormGroup, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -22,20 +22,19 @@ export class LoginComponent implements OnInit {
     let user= this.loginForm.value.usuario;
     let contraseña= this.loginForm.value.password;
 
-
-    if(this.loginForm.valid){
-
-      if(user=="profesor" ||  user=="director"){
+    if(this.loginForm.valid)
+    {
+      if(user=="profesor" ||  user=="director")
+      {
         window.location.href="/registertime"
       }
       else
       {
         alert("usuario no existe")
       }
-
-      
     }
-    else{
+    else
+    {
       alert("Completar todos los datos")
     }
     

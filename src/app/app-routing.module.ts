@@ -20,7 +20,6 @@ const routes: Routes=[
     {path: 'user',component:UserComponent},
     {path: 'search',component:SearchComponent},
     {path:'',redirectTo:'login',pathMatch:'full'}
-
 ];
 
 @NgModule({

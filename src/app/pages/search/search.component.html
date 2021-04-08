@@ -1,99 +1,92 @@
-<div class="row justify-content-center">
+<div class="row justify-content-center mb-4">
     <h1>BÚSQUEDA DE ASISTENCIA</h1>
-  </div>
-  
-  <br>
+</div>
 
-
-  <div class="row justify-content-center">
-
+<div class="row justify-content-center">
     <div class="col col-lg-12"> 
-      <div class="card ">
-        <div class="card-header bg-primary" style="color:white;" > <b>Filtros</b></div>
-        <div class="card-body">
-            <div class="form-body">
-                <div class="row" >
-                    <div class="col-md-4">
-                        <div class="form-group row mr-0 ml-0" >
-                            <label class="control-label text-left col-md-4 mt-2"><b> Fecha Inicio: </b></label>
-                            <div class="col-md-8">
-                                <input class="form-control" type="date" >
+        <div class="card ">
+            <div class="card-header bg-primary" style="color:white;" > <b>Filtros</b></div>
+            <div class="card-body">
+                <div class="form-body">
+                    <div class="row" >
+                        <div class="col col-lg-4">
+                            <div class="form-group row mr-0 ml-0" >
+                                <label class="control-label text-left col col-lg-4 mt-2"><b>Fecha Inicio:</b></label>
+                                <div class="col col-lg-8">
+                                    <input class="form-control" type="date" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="form-group row mr-0 ml-0" >
+                                <label class="control-label text-left col col-lg-4 mt-2"><b>Fecha Fin:</b></label>
+                                <div class="col col-lg-8">
+                                    <input class="form-control" type="date"  >
+                                </div>
+                            </div>
+                        </div>                   
+                        <div class="col col-lg-4">
+                            <div class="form-group row mr-0 ml-0" >
+                                <label class="control-label text-left col col-lg-4 mt-2"><b>Profesor:</b></label>
+                                <div class="col col-lg-8">
+                                    <select class="form-control" >  
+                                        <option value="">Seleccione</option>
+                                        <option value="Lucia Rojas">Lucia Rojas</option>
+                                        <option value="Avril Ayala">Avril Ayala</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="form-group row mr-0 ml-0" >
-                            <label class="control-label text-left col-md-4 mt-2"><b>Fecha Fin:</b> </label>
-                            <div class="col-md-8">
-                                <input class="form-control" type="date"  >
+                    <div class="row ">
+                        <div class="col col-lg-6">
+                            <div class="form-group row ">
+                                <div class="col col-lg-12 ">
+                                    <a class=" btn btn-info btn-block " ><i class="fa fa-search"></i> Buscar</a>
+                                </div>                                                                           
+                            </div>
+                        </div>
+                        <div class="col col-lg-6">
+                            <div class="form-group row ">
+                                <div class="col col-lg-12">
+                                    <form >
+                                        <a  class=" btn btn-warning btn-block" ><i class="fa fa-file-excel-o"></i> Exportar</a>
+                                    </form>
+                                </div>                                    
                             </div>
                         </div>
                     </div>
-                   
-                    <div class="col-md-4">
-                        <div class="form-group row mr-0 ml-0" >
-                            <label class="control-label text-left col-md-4 mt-2"><b>Profesor:</b></label>
-                            <div class="col-md-8">
-                                <select class="form-control" >  
-                                    <option value="">Seleccione</option>
-                                    <option value="Lucia Rojas">Lucia Rojas</option>
-                                    <option value="Avril Ayala">Avril Ayala</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                </div>                
+                <div class="col col-lg-12 justify-content-center">
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered  tablesorter" >
+                                <thead>
+                                    <tr style="text-align:center">                                
+                                        <th>APELLIDOS NOMBRES</th>
+                                        <th>DNI</th>                                
+                                        <th>DÍA</th> 
+                                        <th>FECHA</th>                                
+                                        <th>HORA ENTRADA</th>
+                                        <th>HORA SALIDA</th>                                
+                                        <th>TARDANZA</th>
+                                    </tr>
+                                </thead>
+                                <tbody >
+                                    <tr>
+                                        <td>Lucia Rojas Torres</td>
+                                        <td>88888888</td>
+                                        <td>Lunes</td>
+                                        <td>01-04-2021</td>                            
+                                        <td>7:30</td>
+                                        <td>14:00</td>  
+                                        <td>0</td>
+                                    </tr>                                                                            
+                                </tbody>
+                            </table>
+                        </div>   
+                    </div>                                 
                 </div>
-                <div class="row ">
-                    <div class="col-md-6">
-                        <div class="form-group row ">
-                            <div class="col-md-12 ">
-                                <button class=" btn btn-info btn-block " ><i class="fa fa-search"></i> Buscar</button>
-                            </div>                                                                           
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group row ">
-                            <div class="col-md-12">
-                                <form id="form_exportar" method="post" accept-charset="utf-8">
-                                    <a  class=" btn btn-warning btn-block" ><i class="fa fa-file-excel-o"></i> Exportar</a>
-                                </form>
-                            </div>                                    
-                        </div>
-                    </div>
-                </div>
-            </div>                                
-            
-            <div class="col-md-12 justify-content-center">
-                <div class="table-responsive">
-                    <table class="table table-bordered  tablesorter" id ="tableindicadores"  >
-                        <thead>
-                            <tr style="text-align:center">
-                                
-                                <th>APELLIDOS NOMBRES</th>
-                                <th>DNI</th>                                
-                                <th>DÍA</th> 
-                                <th>FECHA</th>                                
-                                <th>HORA ENTRADA</th>
-                                <th>HORA SALIDA</th>                                
-                                <th>TARDANZA</th>
-                            </tr>
-                        </thead>
-                        <tbody >
-                            <td>Lucia Rojas Torres</td>
-                            <td>88888888</td>
-                            <td>Lunes</td>
-                            <td>01-04-2021</td>                            
-                            <td>7:30</td>
-                            <td>14:00</td>  
-                            <td>0</td>                                         
-                        </tbody>
-                    </table>
-
-                </div>
-                
-            </div>    
-
-
             </div>    
         </div>
     </div>

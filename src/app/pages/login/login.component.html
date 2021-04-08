@@ -2,53 +2,28 @@
     <h1>CONTROL DE ASISTENCIA Y PLANILLA</h1>
 </div>
 
-<br>
-
-<form>
-
-    <div class="row">
-        <div class="col col-lg-5 mt-5"> 
-            <form [formGroup]="loginForm" >
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <div class="form-group">
-                            <label for="usuario">USUARIO</label>
-                            <input type="email" class="form-control"  formControlName="usuario" aria-describedby="emailHelp" placeholder="Ingresar usuario" >
-                        </div>
-                        <div class="form-group">
-                            <label for="password">CONTRASEÑA</label>
-                            <input type="password" class="form-control" formControlName="password"  placeholder="Ingresar contraseña" >
-                        </div>                            
-                        <button (click)="onSubmit()" class="btn btn-primary mx-auto  ">Ingresar</button>
+<div class="row">
+    <div class="col col-lg-5 mt-5"> 
+        <form [formGroup]="loginForm" >
+            <div class="form-row">
+                <div class="form-group col col-lg-12">
+                    <div class="form-group">
+                        <label for="usuario">USUARIO</label>
+                        <input type="text" class="form-control"  formControlName="usuario"  placeholder="Ingresar usuario" >
                     </div>
-                </div>  
-            </form>            
-        </div>
-
-        <div class="col col-lg-7">
-            <img src="assets/images/login.png"  class="mx-auto d-block" alt="" width="350" >
-        </div>
+                    <div class="form-group">
+                        <label for="password">CONTRASEÑA</label>
+                        <input type="password" class="form-control" formControlName="password"  placeholder="Ingresar contraseña" >
+                    </div>                            
+                    <button (click)="onSubmit()" class="btn btn-primary mx-auto  ">Ingresar</button>
+                </div>
+            </div>  
+        </form>            
     </div>
 
+    <div class="col col-lg-7">
+        <img src="assets/images/login.png"  class="mx-auto d-block" alt="" width="350" >
+    </div>
+</div>         
 
-    <!-- <div style="display: grid;align-items: center; grid-template-columns: 1fr 1fr; grid-column-gap: 70px; width: 900px; margin: 0 auto; margin-bottom: 80px;">
-        <div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">USUARIO</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar usuario" required>
-                <small id="emailHelp" class="form-text text-muted">Usuario incorrecto</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">CONTRASEÑA</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Ingresar contraseña" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
-        </div>
-        <div>
-            <img style="width: 100%;" src="./assets/img/clip-school-teacher.png" alt="">
-        </div>
-    </div> -->
-
-        
-</form>
 

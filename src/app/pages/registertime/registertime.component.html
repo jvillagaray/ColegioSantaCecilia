@@ -1,40 +1,34 @@
-<div class="row justify-content-center">
+<div class="row justify-content-center mb-4">
   <h1>REGISTRAR MARCACIÓN</h1>
 </div>
-
-<br>
 
 <div class="row justify-content-center">
   <div class="col col-lg-6"> 
     <div class="card ">
       <div class="card-header bg-primary" style="color:white;" > <b>Por favor, ingresa tu asistencia.</b></div>
       <div class="card-body">
-          <div class="form-row">
-              <div class="form-group col-md-12" >
-                  <form [formGroup]="register">
-                    <div class="form-row">
-                      <div class="form-group col-md-12 text-center">
-                          <h1>mié 07-04-2021</h1>
-                          <p></p>                          
-                      </div>
-                    </div>
-                    <div class="form-row">
-                      
-                        <div class="form-group col-md-6 col-sm-12" style="text-align: center;">
-                          <input type="button" value="Entrada"  class="btn btn-success  btn-sm" (click)="grabarMarcacion('Entrada')" style="height:60px; width:70%; font-size:30px;">
-                        </div>
-                        <div class="form-group col-md-6 col-sm-12" style="text-align: center;">
-                          <input type="button" value="Salida"  class="btn btn-danger  btn-sm" (click)="grabarMarcacion('Salida');" style="height:60px; width:70%; font-size:30px;">
-                        </div>                         
-                      
-                    </div>
-
-                  </form>                               
+        <div class="form-row">
+          <div class="form-group col col-lg-12" >
+            <form [formGroup]="register">
+              <div class="form-row">
+                <div class="form-group col col-lg-12 text-center">
+                  <h1>mié 07-04-2021</h1>
+                  <p></p>                          
+                </div>
               </div>
-          </div>    
+              <div class="form-row">                      
+                <div class="form-group col col-lg-6 col-sm-12" style="text-align: center;">
+                  <input type="button" value="Entrada"  class="btn btn-success  btn-sm" (click)="grabarMarcacion('Entrada')" style="height:60px; width:70%; font-size:30px;">
+                </div>
+                <div class="form-group col col-lg-6 col-sm-12" style="text-align: center;">
+                  <input type="button" value="Salida"  class="btn btn-danger  btn-sm" (click)="grabarMarcacion('Salida');" style="height:60px; width:70%; font-size:30px;">
+                </div>                      
+              </div>
+            </form>                               
+          </div>
+        </div>    
       </div>
+    </div>
   </div>
-  </div>
-
 </div>
 
